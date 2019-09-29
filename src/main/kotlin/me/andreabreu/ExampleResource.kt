@@ -20,7 +20,7 @@ class ExampleResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     fun hello(): String {
-        val harry = Person(firstName = "Harry 2", lastName = "Potter")
+        val harry = Person(firstName = "Harry", lastName = "Potter")
         return json.stringify(Person.serializer(), harry)
     }
 }
